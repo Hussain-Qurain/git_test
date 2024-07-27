@@ -6,6 +6,7 @@
     <title>Document</title>
 
     <script>
+        // This function asks users if they are sure they want to leave the page
         window.onbeforeunload = function() {
         return "Are you sure you want to leave?";
     };
@@ -13,6 +14,7 @@
 </head>
 <body>
     <h1>Homepage</h1>
+    <!-- target="_blank" allows link to open in new tab, but its bad practice and rel="noreferrer" is a good security measure to prevent phishing site, from where the the link was opened -->
     <a href="https://www.theodinproject.com/about" target="_self" rel="noopener noreferrer">About The Odin Project</a>
     <a href="./pages/about.html">About</a>
     <img src="https://www.theodinproject.com/mstile-310x310.png" height="310" width="310">
